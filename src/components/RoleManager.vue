@@ -1,8 +1,8 @@
 <script setup>
 import { ref, reactive, onMounted, watch } from 'vue';
 import { useRbacStore } from '@/stores/rbacStore';
-import Popup from './ui/Popup.vue';
-import Toggle from './ui/Toggle.vue';
+import Popup from '@/components/ui/Popup.vue';
+import Toggle from '@/components/ui/Toggle.vue';
 import { useConfirm } from '@/composables/useConfirm';
 
 const { show } = useConfirm();

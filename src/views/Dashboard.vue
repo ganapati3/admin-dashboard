@@ -4,7 +4,7 @@ import { onMounted, computed } from 'vue';
 import DashboardCard from '@/components/ui/DashboardCard.vue';
 import Datagrid from '@/components/ui/Datagrid.vue';
 import { useRouter } from 'vue-router';
-import RoleManager from '../components/RoleManager.vue';
+import RoleManager from '@/components/RoleManager.vue';
 
 const router = useRouter()
 const store = useRbacStore();

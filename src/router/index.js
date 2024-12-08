@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Dashboard from '../views/Dashboard.vue';
+import Dashboard from '@/views/Dashboard.vue';
 import UsersView from '@/views/UserPage.vue';
 import RolesView from '@/views/RolesPage.vue';
 import NotFound from '@/views/NotFound.vue';

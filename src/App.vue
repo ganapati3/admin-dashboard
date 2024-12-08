@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
-import NavBar from './components/ui/NavBar.vue';
-import Sidebar from './components/ui/Sidebar.vue';
-import Confirm from './components/ui/Confirm.Vue';
+import NavBar from '@/components/ui/NavBar.vue';
+import Sidebar from '@/components/ui/Sidebar.vue';
+import Confirm from '@/components/ui/Confirm.Vue';
 
 const isSidebarOpen = ref(false);
 const sidebarRef = ref(null);
