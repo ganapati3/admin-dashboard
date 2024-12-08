@@ -94,6 +94,11 @@ const userRoles = computed(() => {
   return array
 })
 
+const handleDelete = (e,id) => {
+  e.stopPropagation()
+  deleteUser(id)
+}
+
 </script>
 
 <template>
@@ -186,7 +191,7 @@ const userRoles = computed(() => {
         </button>
         <button
         v-if="store.currentPermissions.delete"
-          @click="deleteUser(data.id)"
+          @click.prevent="handleDelete($event,data.id)"
           class="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 flex items-center gap-1"
         >
           <i class="lni lni-trash-3"></i>
